@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <meta name="description" content="Un site test pour améliorer css et html"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/menu_hamburger.css">
+    <title>Exo 1</title>
+</head>
+
+<body>
+    <header>
+        <p>O</p>
+        <p>O</p>
+        <p>O</p>
+        <hr>
+    </header>
+
+    <div id="banner">
+        <div class="logo">
+            <h2>LOGO</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="https://developer.mozilla.org/fr/" target="_blank">Mozilla</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></button>      
+    </div>
+
+    <!-- Menu hamburger -->
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Accueil</a>
+        <a href="#">Portfolio</a>
+        <a href="#">A propos</a>
+        <a href="#">Contact</a>
+    </div> <!-- Menu hamburger -->
+
+
+    <main>
+        <h1>TITRE DE MA PAGE</h1>
+
+        <div class="bloc_centre">
+            <div class="sidebar">
+                <h2>SIDEBAR</h2>
+            </div>
+
+            <div id="sections">
+                <h2>SECTION</h2>
+
+                <div class="section_2">
+                    <h2>ARTICLES</h2>
+                    <div class="mes_articles">                       
+                            <p>ARTICLE</p>
+                            <p>ARTICLE</p>
+                            <p>ARTICLE</p>
+                            <p>ARTICLE</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "170px";
+        }
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>
