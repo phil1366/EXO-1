@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">   
-    <meta name="description" content="Un site test pour améliorer css et html"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Un site test pour améliorer css et html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/menu_hamburger.css">
+    <link rel="stylesheet" href="/mediaqueries.css">
     <title>Exo 1</title>
 </head>
 
 <body>
     <header>
-        <p>O</p>
-        <p>O</p>
-        <p>O</p>
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
         <hr>
     </header>
 
@@ -25,23 +27,26 @@
         <div class="logo">
             <h2>LOGO</h2>
         </div>
+
         <nav>
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="https://developer.mozilla.org/fr/" target="_blank">Mozilla</a></li>
                 <li><a href="#">A propos</a></li>
+                <li><a href="#">Presentation</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <button class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></button>      
     </div>
 
     <!-- Menu hamburger -->
+    <button class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></button>
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="#">Accueil</a>
-        <a href="#">Portfolio</a>
-        <a href="#">A propos</a>
+        <a href="https://developer.mozilla.org/fr/" target="_blank">Mozilla</a>
+        <a href="#">À propos</a>
+        <a href="#">Presentation</a>
         <a href="#">Contact</a>
     </div> <!-- Menu hamburger -->
 
@@ -59,11 +64,11 @@
 
                 <div class="section_2">
                     <h2>ARTICLES</h2>
-                    <div class="mes_articles">                       
-                            <p>ARTICLE</p>
-                            <p>ARTICLE</p>
-                            <p>ARTICLE</p>
-                            <p>ARTICLE</p>
+                    <div class="mes_articles">
+                        <p>ARTICLE</p>
+                        <p>ARTICLE</p>
+                        <p>ARTICLE</p>
+                        <p>ARTICLE</p>
                     </div>
                 </div>
             </div>

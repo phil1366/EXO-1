@@ -1,5 +1,7 @@
 /* MENU HAMBURGER */
 
+@media (min-width: 795px) and (max-width: 992px) {
+
 #mySidepanel {
     visibility: visible;
   }
@@ -9,7 +11,7 @@
     /*z-index: 1;*/
     height: 35vh;
     top: 51px;
-    left: 66px;
+    left: 64px;
     background: rgb(194, 153, 153);
     overflow-x: hidden;
     transition: 0.5s;
@@ -57,3 +59,56 @@
     box-shadow: 0 0 1.5em 0 rgb(0 0 0 / 20%);
     visibility: visible;
 }*/
+}
+
+@media (max-width: 794px) {
+  #mySidepanel {
+    visibility: visible;
+  }
+  .sidepanel {     /* bloc hamburger */
+    width: 0;
+    position: fixed;
+    /*z-index: 1;*/
+    height: 30vh;
+    top: 51px;
+    left: 66px;
+    background: rgb(194, 153, 153);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 65px;
+  }
+  .sidepanel a {
+    text-align: center;
+    padding: 5px 12px 8px 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s; 
+  }
+  .sidepanel .closebtn {     /* Croix hamburger */
+    position: absolute;
+    top: 0;
+    right: 66px;
+    font-size: 40px;
+  }
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  .openbtn,
+  .fa-bars {
+    visibility: visible;
+  }
+  .openbtn {        
+    background-color: transparent;  
+    border: none;  
+    margin-left: 70px;    
+  }
+  .fa-bars {
+    position: absolute;
+    left: 70px;
+    top: 80px;
+    color: red;
+    font-size: 40px;    
+  }
+}
